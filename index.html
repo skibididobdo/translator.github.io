@@ -22,28 +22,28 @@
 
     <!-- STICKY HEADER / NAVBAR -->
     <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-row items-center justify-between gap-2">
             
-            <!-- Logo & Title (Единственный главный h1 на странице) -->
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-extrabold text-lg flex items-center justify-center shadow-lg shadow-amber-500/20">
+            <!-- Logo & Title -->
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-500 text-slate-950 font-extrabold text-base sm:text-lg flex items-center justify-center shadow-lg shadow-amber-500/20 shrink-0">
                     GYV
                 </div>
                 <div>
-                    <h1 class="text-lg font-bold text-white tracking-wide">György Viktor</h1>
-                    <p class="text-[10px] font-semibold text-amber-400 uppercase tracking-wider">Translator / Переводчик</p>
+                    <h1 class="text-base sm:text-lg font-bold text-white tracking-wide leading-tight">György Viktor</h1>
+                    <p class="text-[9px] sm:text-[10px] font-semibold text-amber-400 uppercase tracking-wider" data-i18n="header_subtitle">ПЕРЕВОДЧИК</p>
                 </div>
             </div>
 
             <!-- Language Switcher -->
-            <div class="flex items-center bg-slate-800/80 p-1.5 rounded-xl border border-slate-700/60 shadow-inner">
-                <button id="btn-lang-ru" onclick="switchLanguage('ru')" class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow">
+            <div class="flex items-center bg-slate-800/80 p-1 sm:p-1.5 rounded-xl border border-slate-700/60 shadow-inner">
+                <button id="btn-lang-ru" onclick="switchLanguage('ru')" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow">
                     RU
                 </button>
-                <button id="btn-lang-ua" onclick="switchLanguage('ua')" class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">
+                <button id="btn-lang-ua" onclick="switchLanguage('ua')" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">
                     UA
                 </button>
-                <button id="btn-lang-hu" onclick="switchLanguage('hu')" class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">
+                <button id="btn-lang-hu" onclick="switchLanguage('hu')" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">
                     HU
                 </button>
             </div>
@@ -52,42 +52,41 @@
     </header>
 
     <!-- HERO SECTION С БОЛЬШИМ ТЕКСТОМ -->
-    <section class="w-full bg-gradient-to-b from-slate-900 via-slate-800/50 to-slate-900 py-12 sm:py-16 px-4 border-b border-slate-800/60 text-center">
+    <section class="w-full bg-gradient-to-b from-slate-900 via-slate-800/50 to-slate-900 py-8 sm:py-16 px-4 border-b border-slate-800/60 text-center">
         <div class="max-w-4xl mx-auto space-y-3">
-            <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full text-xs font-semibold uppercase tracking-widest">
+            <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-widest">
                 Professional Translation Services
             </span>
-            <!-- Заменили h1 на div с ролью heading уровня 2, чтобы не дублировать h1 -->
-            <div role="heading" aria-level="2" class="text-3xl sm:text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 tracking-tight uppercase" data-i18n="hero_title">
+            <div role="heading" aria-level="2" class="text-2xl sm:text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 tracking-tight uppercase leading-tight sm:leading-none break-words" data-i18n="hero_title">
                 ПРОФЕССИОНАЛЬНЫЙ ПЕРЕВОДЧИК
             </div>
-            <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto font-medium" data-i18n="hero_subtitle">
+            <p class="text-slate-400 text-xs sm:text-base max-w-xl mx-auto font-medium" data-i18n="hero_subtitle">
                 Венгерский • Украинский • Русский
             </p>
         </div>
     </section>
 
     <!-- MAIN CONTAINER -->
-    <main class="max-w-4xl w-full mx-auto px-4 py-8 flex-grow space-y-6 flex flex-col items-center">
+    <main class="max-w-4xl w-full mx-auto px-4 py-6 sm:py-8 flex-grow space-y-6 flex flex-col items-center">
 
         <!-- NAV TABS -->
-        <div class="bg-slate-800/60 p-2 rounded-2xl border border-slate-700/60 flex flex-wrap sm:flex-nowrap justify-center gap-2 w-full">
-            <button id="tab-btn-about" onclick="switchTab('about')" class="flex-1 min-w-[140px] px-5 py-3 rounded-xl font-medium text-sm transition-all flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700/50">
+        <div class="bg-slate-800/60 p-1.5 sm:p-2 rounded-2xl border border-slate-700/60 flex flex-col sm:flex-row justify-center gap-2 w-full">
+            <button id="tab-btn-about" onclick="switchTab('about')" class="w-full sm:flex-1 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700/50">
                 <i class="fa-solid fa-user text-amber-400"></i>
                 <span data-i18n="nav_about">Обо мне</span>
             </button>
-            <button id="tab-btn-why" onclick="switchTab('why')" class="flex-1 min-w-[140px] px-5 py-3 rounded-xl font-medium text-sm transition-all flex items-center justify-center gap-2 bg-amber-500 text-slate-950 font-bold shadow-lg shadow-amber-500/20">
+            <button id="tab-btn-why" onclick="switchTab('why')" class="w-full sm:flex-1 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-amber-500 text-slate-950 font-bold shadow-lg shadow-amber-500/20">
                 <i class="fa-solid fa-star"></i>
                 <span data-i18n="nav_why">Почему выбирают меня</span>
             </button>
-            <button id="tab-btn-contact" onclick="switchTab('contact')" class="flex-1 min-w-[140px] px-5 py-3 rounded-xl font-medium text-sm transition-all flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700/50">
+            <button id="tab-btn-contact" onclick="switchTab('contact')" class="w-full sm:flex-1 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700/50">
                 <i class="fa-solid fa-phone text-amber-400"></i>
                 <span data-i18n="nav_contact">Связь со мной</span>
             </button>
         </div>
 
         <!-- TAB CONTENT 1: ABOUT ME -->
-        <div id="tab-content-about" class="hidden w-full bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
+        <div id="tab-content-about" class="hidden w-full bg-slate-800/40 border border-slate-700/60 rounded-2xl p-5 sm:p-8 shadow-xl space-y-6">
             
             <!-- Фотография профиля -->
             <div class="flex justify-center">
@@ -100,19 +99,19 @@
                 </div>
             </div>
 
-            <h2 class="text-2xl font-bold text-white flex items-center justify-center gap-3">
+            <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center justify-center gap-3">
                 <i class="fa-solid fa-user text-amber-400"></i>
                 <span data-i18n="about_title">Обо мне</span>
             </h2>
 
-            <p class="text-slate-300 leading-relaxed text-base text-center max-w-2xl mx-auto" data-i18n="about_text">
+            <p class="text-slate-300 leading-relaxed text-sm sm:text-base text-center max-w-2xl mx-auto" data-i18n="about_text">
                 Носитель трех языков (венгерский, украинский, русский). Предоставляю качественные услуги письменного и устного перевода с высокой точностью и глубоким пониманием языковых нюансов.
             </p>
         </div>
 
         <!-- TAB CONTENT 2: WHY CHOOSE ME -->
-        <div id="tab-content-why" class="w-full bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
-            <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+        <div id="tab-content-why" class="w-full bg-slate-800/40 border border-slate-700/60 rounded-2xl p-5 sm:p-8 shadow-xl space-y-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center justify-center sm:justify-start gap-3">
                 <i class="fa-solid fa-star text-amber-400"></i>
                 <span data-i18n="why_title">Почему выбирают меня</span>
             </h2>
@@ -160,14 +159,14 @@
         </div>
 
         <!-- TAB CONTENT 3: CONTACT -->
-        <div id="tab-content-contact" class="hidden w-full bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
-            <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+        <div id="tab-content-contact" class="hidden w-full bg-slate-800/40 border border-slate-700/60 rounded-2xl p-5 sm:p-8 shadow-xl space-y-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center justify-center sm:justify-start gap-3">
                 <i class="fa-solid fa-phone text-amber-400"></i>
                 <span data-i18n="contact_title">Связь со мной</span>
             </h2>
 
             <!-- Working hours -->
-            <div class="bg-slate-800/80 border border-slate-700/50 p-4 rounded-xl flex items-center justify-between flex-wrap gap-2 text-sm">
+            <div class="bg-slate-800/80 border border-slate-700/50 p-4 rounded-xl flex items-center justify-between flex-wrap gap-2 text-xs sm:text-sm">
                 <div class="flex items-center gap-2 text-slate-300">
                     <i class="fa-regular fa-clock text-amber-400"></i>
                     <span class="font-medium" data-i18n="contact_hours_label">Время для звонков:</span>
@@ -180,12 +179,12 @@
 
             <!-- Buttons -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <a href="tel:+36202856078" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-amber-500/20">
+                <a href="tel:+36202856078" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-amber-500/20 text-sm sm:text-base">
                     <i class="fa-solid fa-phone"></i>
                     <span>+36 20 285 6078</span>
                 </a>
-                <a href="mailto:viktor.kiril.kv@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold py-3.5 px-6 rounded-xl border border-slate-700 flex items-center justify-center gap-2 transition-all">
-                    <i class="fa-regular fa-envelope text-amber-400"></i>
+                <a href="mailto:viktor.kiril.kv@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold py-3.5 px-6 rounded-xl border border-slate-700 flex items-center justify-center gap-2 transition-all text-sm sm:text-base break-all sm:break-normal">
+                    <i class="fa-regular fa-envelope text-amber-400 shrink-0"></i>
                     <span>viktor.kiril.kv@gmail.com</span>
                 </a>
             </div>
@@ -194,7 +193,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+    <footer class="border-t border-slate-800 py-6 text-center text-[10px] sm:text-xs text-slate-500 px-4">
         <p>© György Viktor — Fordítói Szolgáltatások / Услуги перевода</p>
     </footer>
 
@@ -210,10 +209,10 @@
                 
                 if (tab === tabName) {
                     content.classList.remove('hidden');
-                    btn.className = "flex-1 min-w-[140px] px-5 py-3 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20";
+                    btn.className = "w-full sm:flex-1 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20";
                 } else {
                     content.classList.add('hidden');
-                    btn.className = "flex-1 min-w-[140px] px-5 py-3 rounded-xl font-medium text-sm transition-all flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700/50";
+                    btn.className = "w-full sm:flex-1 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700/50";
                 }
             });
         }
@@ -221,6 +220,7 @@
         // Multilingual Dictionary
         const translations = {
             ru: {
+                header_subtitle: "ПЕРЕВОДЧИК",
                 hero_title: "ПРОФЕССИОНАЛЬНЫЙ ПЕРЕВОДЧИК",
                 hero_subtitle: "Венгерский • Украинский • Русский",
                 nav_about: "Обо мне",
@@ -240,6 +240,7 @@
                 contact_hours_val: "Понедельник — Воскресенье"
             },
             ua: {
+                header_subtitle: "ПЕРЕКЛАДАЧ",
                 hero_title: "ПРОФЕСІЙНИЙ ПЕРЕКЛАДАЧ",
                 hero_subtitle: "Угорська • Українська • Російська",
                 nav_about: "Про мене",
@@ -259,6 +260,7 @@
                 contact_hours_val: "Понеділок — Неділя"
             },
             hu: {
+                header_subtitle: "TOLMÁCS",
                 hero_title: "PROFESSZIONÁLIS FORDÍTÓ",
                 hero_subtitle: "Magyar • Ukrán • Orosz",
                 nav_about: "Rólam",
@@ -286,9 +288,9 @@
             languages.forEach(l => {
                 const btn = document.getElementById(`btn-lang-${l}`);
                 if (l === lang) {
-                    btn.className = "px-3 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow";
+                    btn.className = "px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow";
                 } else {
-                    btn.className = "px-3 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white";
+                    btn.className = "px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white";
                 }
             });
 
